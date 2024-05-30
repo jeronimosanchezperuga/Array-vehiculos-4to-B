@@ -18,9 +18,8 @@ public class AlquilerVehiculos : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             //activar solo un vehiculo al azar del array
-            int randomNumber = Random.Range(0,vehiculos.Length);
             DesactivarTodosLosVehiculos();
-            vehiculos[randomNumber].SetActive(true);
+            vehiculos[Random.Range(0, vehiculos.Length)].SetActive(true);
         }   
     }
 
